@@ -25,6 +25,19 @@ body {
             padding: 50px;
             width: calc(40% - 20px);
         }
+
+            .title {
+
+            }
+
+            .footer {
+
+            }
+
+            .link {
+                
+            }
+
         .right-column {
             display: inline-block;
             float: left;
