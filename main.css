@@ -9,39 +9,125 @@ word-break: break-all;
 }
 
 body {
-    background-color: #6561b0;
 }
-
+    .bg {
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: blur(10px);
+    }
     .container {
         display: inline-block;
-        width: 600px;
+        width: 800px;
         margin-top: 100px;
-        margin-left: calc( (100% - 600px) / 2)
+        margin-left: calc( (100% - 600px) / 2);
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        transform: translate(-50%, -50%);
     }
-
+    .footer {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        right: 40px;
+        text-align: center;
+        color: white;
+    }
+    .link {
+        color: white;
+    }
         .left-column {
+            position: absolute;
             display: inline-block;
             float: left;
+            width: 340px;
+            background-image: url(fonas.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center left;
             padding: 50px;
-            width: calc(40% - 20px);
+            top: 30px;
+            bottom: 30px;
+            /* width: calc(40% - 20px); */
         }
-
             .title {
-
-            }
-
-            .footer {
-
+            font-size: 50px;
+            color: white;
             }
 
             .link {
                 
             }
-
         .right-column {
             display: inline-block;
-            float: left;
-            width: calc(40% - 20px);
+            float: right;
+            width: calc(60% - 20px);
             padding: 60px;
             background-color: #ffff;
+            position: relative;
+            color: grey;
+        }
+            .close {
+                width: 60px;
+                Height: 60px;
+                line-height: 56px;
+                text-align: center;
+                /* margin-top: -60px; */
+                position: absolute;
+                top: 0;
+                right: 0px;
+                font-size: 30px;
+                color: grey;
+            }       
+        .form {
+            display: inline-block;
+            width: 100%;
+        }
+        .form-row {
+            display: inline-block;
+            width: 100%;
+            padding: 10px;
+        }
+            .form-row a:last-of-type {
+                margin-bottom: 0;            
+            }
+            .label {
+                font-size: 18px;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+        input {
+            display:inline-block;  
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid grey;
+        }
+        .btn {
+            display:inline-block;
+            color: white;
+            background-color: blue;
+            /* padding: 20px; */
+            line-height: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border-radius: 10px;
+            font-weight: bold;
+        }  
+        .or {
+            display:inline-block;
+            line-height: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+
+        }
+        .blue-link {
+            display:inline-block;
+            text-decoration: none;
+            line-height: 40px;
         }
